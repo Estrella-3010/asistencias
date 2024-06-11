@@ -23,7 +23,7 @@ class UserController extends Controller
             //agregar el usuario al array 
             $usuarios[] = $usuario; 
         }
-        //sirve para ver el contenido de la variable 
+        //sirve para ver el contenido de la variable  g 
         //dd($usuarios);
         //retonar la vista con los usuarios 
         return view('usuarios.vista', compact('usuarios'));
@@ -33,7 +33,7 @@ class UserController extends Controller
 
         //traer todos los usuarios 
         $users = User::all();
-        
+
 
         return view('usuarios.users', compact('users'));
 
